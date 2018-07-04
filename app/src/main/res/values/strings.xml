@@ -12,4 +12,5 @@
     <string name="title_clock" translatable="false">alarm clock</string>
     <string name="title_Timer" translatable="false">Timer</string>
     <string name="title_recycler" translatable="false">Recycler</string>
+    <string name="action_no">No</string>
 </resources>
