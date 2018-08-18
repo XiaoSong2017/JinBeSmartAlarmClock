@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".View.AddActivity">
-    <Button
-        android:id="@+id/mButton_No"
-        android:text="@string/action_no"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        android:layout_width="wrap_content"
+    <TimePicker
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_shape"
-        android:shadowColor="#8CA800"
-        android:shadowDx="0"
-        android:shadowDy="0"
-        android:shadowRadius="5"/>
-    <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/mTimerPicker"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mTimerPicker"
+        android:text="@string/action_yes"
+        android:id="@+id/mButton_yes"/>
 </android.support.constraint.ConstraintLayout>

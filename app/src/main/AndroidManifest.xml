@@ -20,9 +20,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View.AddActivity"
+        <activity
+            android:name=".View.AddActivity"
             android:parentActivityName=".View.MainActivity"
             tools:targetApi="jelly_bean" />
+
+        <service
+            android:name=".Model.AppService"
+            android:exported="false"></service>
     </application>
 
 </manifest>
